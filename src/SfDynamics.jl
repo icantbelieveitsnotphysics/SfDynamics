@@ -1,5 +1,9 @@
 module SfDynamics
 
-# Write your package code here.
+using Reexport
+
+include("fluid-dynamics.jl")
+
+@reexport using .SfFluidDynamics
 
 end
